@@ -173,6 +173,7 @@ footer {
 
 .formul:hover {
   transition-duration: 580ms;
+  background-color: #1b2025; /*Changé*/
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
