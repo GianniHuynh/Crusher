@@ -1,3 +1,5 @@
+//Gianni HUYNH 2021
+
 let esprit;
 let physique;
 let fidelite;
