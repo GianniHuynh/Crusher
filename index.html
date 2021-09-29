@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" media="all" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="icon" href="assets/favicon.ico" />
+    <script type="text/javascript" src="script.js"></script>
+    <title>Crusher - Compatibilité Amoureuse</title>
+  </head>
+  <body>
+    <div class="screentext">
+      <h1 class="Title tagline">Crusher</h1>
+      <h2 class="punchline">
+        "Tout savoir sur ton crush est désormais à portée de clic."
+      </h2>
+      <a href="#ici"><img src="assets/arrow.png" class="arrow arrowline" /></a>
+      <p id="ici"></p>
+    </div>
+
+    <div class="Card cardline">
+      <h3>💔 Calculateur de compatibilité ❤️</h3>
+      <p class="parag">
+        Tu as toujours rêvé de savoir si ton crush est fait pour toi ? Tu es sur le bon site ! Des chercheurs de l'université de Stanford 
+        ont réalisé cet algorithme complexe capable de déterminer avec précision les paramètres de compatibilité entre deux personnes, 
+        tu n'as plus qu'à tester ça !
+      </p>
+
+      <div id="formulaire">
+        <div class="infos">
+          <h5>Toi</h5>
+          <input
+            type="text"
+            placeholder="Prénom"
+            id="prenomMe"
+            class="formul"
+          />
+          <br />
+          <input type="text" placeholder="Nom" id="nomMe" class="formul" />
+          <br />
+          <input type="text" placeholder="Age" id="ageMe" class="formul" />
+          <br />
+          <select name="pets" id="astroMe" class="formul">
+            <option value="">Signe Astrologique</option>
+            <option value="Bélier">Bélier</option>
+            <option value="Taureau">Taureau</option>
+            <option value="Gémeaux">Gémeaux</option>
+            <option value="Cancer">Cancer</option>
+            <option value="Lion">Lion</option>
+            <option value="Vierge">Vierge</option>
+            <option value="Balance">Balance</option>
+            <option value="Scorpion">Scorpion</option>
+            <option value="Sagittaire">Sagittaire</option>
+            <option value="Capricorne">Capricorne</option>
+            <option value="Verseau">Verseau</option>
+            <option value="Poissons">Poissons</option>
+          </select>
+          <br />
+        </div>
+
+        <div class="infos2">
+          <h5>Ton Crush</h5>
+          <input
+            type="text"
+            placeholder="Prénom"
+            id="prenomCrush"
+            class="formul"
+          />
+          <br />
+          <input type="text" placeholder="Nom" id="nomCrush" class="formul" />
+          <br />
+          <input type="text" placeholder="Age" id="ageCrush" class="formul" />
+          <br />
+          <select name="pets" id="astroCrush" class="formul">
+            <option value="">Signe Astrologique</option>
+            <option value="Bélier">Bélier</option>
+            <option value="Taureau">Taureau</option>
+            <option value="Gémeaux">Gémeaux</option>
+            <option value="Cancer">Cancer</option>
+            <option value="Lion">Lion</option>
+            <option value="Vierge">Vierge</option>
+            <option value="Balance">Balance</option>
+            <option value="Scorpion">Scorpion</option>
+            <option value="Sagittaire">Sagittaire</option>
+            <option value="Capricorne">Capricorne</option>
+            <option value="Verseau">Verseau</option>
+            <option value="Poissons">Poissons</option>
+          </select>
+        </div>
+      </div>
+      <button onclick="launchCrush()" class="Button">
+        Lancer le calcul 🍓
+      </button>
+
+      <p id="Resultat"></p>
+      <h3>Compatibilité</h3>
+
+      <div id="donnes">
+        <div class="stats">
+          <div class="barre">
+            <p class="TextBar">Esprit</p>
+            <div class="cercle" id="EUN"></div>
+            <div class="cercle" id="EDEUX"></div>
+            <div class="cercle" id="ETROIS"></div>
+            <div class="cercle" id="EQUATRE"></div>
+          </div>
+
+          <div class="barre">
+            <p class="TextBar">Physique</p>
+            <div class="cercle" id="PUN"></div>
+            <div class="cercle" id="PDEUX"></div>
+            <div class="cercle" id="PTROIS"></div>
+            <div class="cercle" id="PQUATRE"></div>
+          </div>
+        </div>
+
+        <div class="stats">
+          <div class="barre">
+            <p class="TextBar">Fidélité</p>
+            <div class="cercle" id="FUN"></div>
+            <div class="cercle" id="FDEUX"></div>
+            <div class="cercle" id="FTROIS"></div>
+            <div class="cercle" id="FQUATRE"></div>
+          </div>
+
+          <div class="barre">
+            <p class="TextBar">Sexuelle</p>
+            <div class="cercle" id="SUN"></div>
+            <div class="cercle" id="SDEUX"></div>
+            <div class="cercle" id="STROIS"></div>
+            <div class="cercle" id="SQUATRE"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>
+        Un site web conçu par Gianni HUYNH en collaboration avec Pierre ANDRE,
+        Romain DONNAREL & Théo GROT
+      </p>
+      <a href="https://github.com/GianniHuynh"
+        ><img class="reslogo" src="assets/github.png" alt="Logo GitHub" )
+      /></a>
+      <a href="https://twitter.com/GianniHynh">
+        <img class="reslogo" src="assets/twitter.png" alt="Logo Twitter"
+      /></a>
+
+      <p>Gianni HUYNH 2021 ©</p>
+    </footer>
+
+    <script>
+      ScrollReveal().reveal(".tagline", { duration: 5000 });
+      ScrollReveal().reveal(".punchline", { duration: 8000 });
+      ScrollReveal().reveal(".arrowline", { duration: 10000 });
+      ScrollReveal().reveal(".cardline", { duration: 2000 });
+    </script>
+  </body>
+</html>
