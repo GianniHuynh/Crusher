@@ -35,7 +35,13 @@ function launchCrush() {
 
   //Partie STATS
 
-  esprit = nbAleatoire(0, 4);
+
+  if (document.getElementById("nomMe").value != "" && document.getElementById("prenomMe").value != "" 
+  && document.getElementById("ageMe").value != "" &&   document.getElementById("astroMe").value != "" 
+  && document.getElementById("nomCrush").value != "" &&  document.getElementById("prenomCrush").value != "" &&
+  document.getElementById("ageCrush").value != "" && document.getElementById("astroCrush").value != ""){
+
+    esprit = nbAleatoire(0, 4);
   physique = nbAleatoire(0, 4);
   fidelite = nbAleatoire(0, 4);
   sexuelle = nbAleatoire(0, 4);
@@ -133,6 +139,16 @@ function launchCrush() {
   crushName = document.getElementById("nomCrush").value;
   crushFirstName = document.getElementById("prenomCrush").value;
 
+  Resultat.innerHTML =
+  meFirstName +
+  " " +
+  meName +
+  " a un crush pour " +
+  crushFirstName +
+  " " +
+  crushName +
+  " ! ✨ Voici les résultats obtenus : ";
+
   document.getElementById("nomMe").value = "";
   document.getElementById("prenomMe").value = "";
   document.getElementById("ageMe").value = "";
@@ -142,13 +158,17 @@ function launchCrush() {
   document.getElementById("ageCrush").value = "";
   document.getElementById("astroCrush").value = "";
 
-  Resultat.innerHTML =
-    meFirstName +
-    " " +
-    meName +
-    " a un crush pour " +
-    crushFirstName +
-    " " +
-    crushName +
-    " ! ✨ Voici les résultats obtenus : ";
+
+
+  }
+
+  else {
+    Resultat.innerHTML = "Opération impossible, veuillez remplir tout les champs afin de calculer les statistiques de compatibilité";
+
+  }
+
+  
+  
+
+ 
 }
