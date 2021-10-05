@@ -132,15 +132,15 @@ footer {
 
 .cercle {
   width: 30px;
-  height: 25px;
+  height: 28px;
   border-radius: 20px;
   background: white;
-  margin: 1%;
   transition-duration: 1s;
 }
 
 .barre {
   display: flex;
+  flex-direction: column;
   align-items: center;
   margin-right: 15%;
   padding: 7%;
@@ -208,3 +208,9 @@ h5 {
   font-size: 1.25em;
   margin-top: 3%;
 }
+
+.leveler{
+  display: flex;
+  flex-direction: row;
+}
+

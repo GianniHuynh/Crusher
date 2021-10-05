@@ -62,7 +62,7 @@ function launchCrush() {
     + document.getElementById("astroMe").value + document.getElementById("nomCrush").value + document.getElementById("prenomCrush").value
     + document.getElementById("ageCrush").value + document.getElementById("astroCrush").value;
 
-    let token = tempToken.toLowerCase();
+    let token = tempToken.toLowerCase().split(" ").join("");
 
 
     // On colorie les cercles en accord avec les scores obtenus
