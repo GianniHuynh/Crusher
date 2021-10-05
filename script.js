@@ -17,6 +17,15 @@ function nbAleatoire(min, max) {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
+//Fonction permettant d'attendre x secondes
+function syncDelay(milliseconds){
+  var start = new Date().getTime();
+  var end=0;
+  while( (end-start) < milliseconds){
+      end = new Date().getTime();
+  }
+ }
+
 // Fonction de lancement de calcul de compatibilité
 function launchCrush() {
   // On restore tout les ronds en Blanc dès le début
@@ -170,6 +179,12 @@ function launchCrush() {
       " " +
       crushName +
       " ! ✨ Voici les résultats obtenus : " + token;
+
+    
+    //Affichage progressif des diagrammes
+    
+    document.getElementById("affichage").style.display = "block";
+
 
     // Et on vide les champs de textes !
     document.getElementById("nomMe").value = "";
