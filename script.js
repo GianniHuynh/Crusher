@@ -47,12 +47,23 @@ function launchCrush() {
     document.getElementById("prenomCrush").value != "" &&
     document.getElementById("ageCrush").value != "" &&
     document.getElementById("astroCrush").value != ""
-  ) {
+  ) {    
     // On lance le calcul des scores de compatibilité, c'est totalement random mais chuut ;)
     esprit = nbAleatoire(0, 4);
     physique = nbAleatoire(0, 4);
     fidelite = nbAleatoire(0, 4);
     sexuelle = nbAleatoire(0, 4);
+
+    // Génération du token
+
+    let tempToken = "";
+
+    tempToken = document.getElementById("nomMe").value +  document.getElementById("prenomMe").value + document.getElementById("ageMe").value
+    + document.getElementById("astroMe").value + document.getElementById("nomCrush").value + document.getElementById("prenomCrush").value
+    + document.getElementById("ageCrush").value + document.getElementById("astroCrush").value;
+
+    let token = tempToken.toLowerCase();
+
 
     // On colorie les cercles en accord avec les scores obtenus
     if (esprit == 1) {
@@ -158,7 +169,7 @@ function launchCrush() {
       crushFirstName +
       " " +
       crushName +
-      " ! ✨ Voici les résultats obtenus : ";
+      " ! ✨ Voici les résultats obtenus : " + token;
 
     // Et on vide les champs de textes !
     document.getElementById("nomMe").value = "";
