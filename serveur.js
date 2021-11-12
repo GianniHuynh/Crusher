@@ -40,6 +40,7 @@ app.get("/getToken/:token", function (req, res) {
   res.end;
 });
 
+
 // Requete créer nouvelle entrée (étape 2)
 
 app.get(
