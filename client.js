@@ -1,7 +1,7 @@
 /*Code JS Crusher côté client 👨🏻‍💻
 Gianni HUYNH 2021 © - All rights reserved.
 */
-const qUrl = `http://127.0.0.1:7500`; //Addresse sur laquelle on récupère les requêtes
+const qUrl = `http://crusher-calculator.xyz:7500`; //Addresse sur laquelle on récupère les requêtes
 
 // Fonction permettant de générer un nombre aléatoire entre un interval donné !
 function nbAleatoire(min, max) {

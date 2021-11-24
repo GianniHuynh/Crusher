@@ -16,7 +16,7 @@ var conn = mysql.createConnection({
   database: "crusher",
   host: "localhost",
   user: "root",
-  password: "",
+  password: "jbstls31esthernet13",
 });
 app.use(cors({ origin: "http://127.0.0.1:5500" })); //Définition de l'autorisation de requêtes http
 
