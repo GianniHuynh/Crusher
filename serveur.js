@@ -13,12 +13,12 @@ app.listen(port);
 console.log("Waiting for request ...");
 
 var conn = mysql.createConnection({
-  database: "crusher",
+  database: "Crusher",
   host: "localhost",
   user: "root",
-  password: "jbstls31esthernet13",
+  password: "",
 });
-app.use(cors({ origin: "http://127.0.0.1:5500" })); //Définition de l'autorisation de requêtes http
+app.use(cors({ origin: "*" })); //Définition de l'autorisation de requêtes http
 
 // Requête Token (Etape 1)
 app.get("/getToken/:token", function (req, res) {
