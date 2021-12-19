@@ -1,4 +1,4 @@
-/*Code JS Crusher côté serveur 🗄️
+/*Code JS Crusher côté serveur 🗄️ 
 Gianni HUYNH 2021 © - All rights reserved.
 */
 
@@ -16,7 +16,7 @@ var conn = mysql.createConnection({
   database: "Crusher",
   host: "localhost",
   user: "root",
-  password: "",
+  password: "jbstls31",
 });
 app.use(cors({ origin: "*" })); //Définition de l'autorisation de requêtes http
 
