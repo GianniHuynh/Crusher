@@ -5,3 +5,5 @@
         tu n'as plus qu'à tester ça !</h3>
 
 <img src = "https://i.imgur.com/rO0zfWk.png" />
+<img src = "https://i.imgur.com/gfUFW1z.png" />
+<img src = "https://i.imgur.com/B6w29Oi.png" />
